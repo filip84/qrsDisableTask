@@ -1,0 +1,1 @@
+"C:\program files\Qlik\Sense\ServiceDispatcher\Node\node.exe" app.js
