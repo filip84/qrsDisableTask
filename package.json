@@ -1,0 +1,15 @@
+{
+  "name": "qrsDisableFailedTask",
+  "version": "1.0.0",
+  "description": "qrs task for simple api controll",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Filip Tinglöf",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2",
+    "simple-node-logger": "^21.8.12"
+  }
+}
