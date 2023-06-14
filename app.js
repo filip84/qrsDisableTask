@@ -29,14 +29,30 @@ const checkPath = (path) => {
 	}
 }
 
+
+const moveFile = (id) => {
+    let oldFileName = `./tasks/${id}.json`
+    let newFileName = `./archive/${id}.json`
+    fs.rename(oldFileName, newFileName, (err) => {
+        if(err) log.error(`moveFile ${oldFileName} to ${newFileName}:`, err.message)
+        log.info(`moveFile ${oldFileName} to ${newFileName}:`, 'finished')
+    })
+}
+
 // Disable a certain task
 const disableTask = (obj) => {
 	try {
-
+       
 		if (!obj) {
 			log.error(`disableTask ${obj.name}:`, "No obj provided")
 			return
 		}
+
+        /*
+        //Test archive function
+        moveFile(obj.id)
+        return
+        */
 
 		// new task object to be put in qrs
 		var updateObject = JSON.parse(JSON.stringify(obj))
@@ -63,6 +79,8 @@ const disableTask = (obj) => {
 				return err
 			}
 			log.info(`disableTask ${obj.name}:`, message.statusCode)
+            moveFile(obj.id)
+
 			return obj
 		})
 
