@@ -18,4 +18,3 @@ https://help.qlik.com/en-US/sense-developer/May2023/APIs/RepositoryServiceAPI/in
 
 PUT
 https://help.qlik.com/en-US/sense-developer/May2023/APIs/RepositoryServiceAPI/index.html?page=490
-![image](https://github.com/filip84/qrsDisableTask/assets/48054901/28406f97-6686-4668-b404-09dff92c7272)
